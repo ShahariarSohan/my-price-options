@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 const NavLink = ({ route }) => {
-  console.log(route);
   return (
     <>
       <li key={route.id}>
