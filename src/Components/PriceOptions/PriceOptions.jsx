@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import PriceOption from "../PriceOption/PriceOption";
 
-const PriceOptions = (props) => {
+const PriceOptions = () => {
   const gyms = [
     {
       id: 1,
