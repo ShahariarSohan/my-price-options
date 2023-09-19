@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import PriceOption from "../PriceOption/PriceOption";
 
 const PriceOptions = () => {
@@ -88,7 +87,5 @@ const PriceOptions = () => {
     </div>
   );
 };
-
-PriceOptions.propTypes = {};
 
 export default PriceOptions;

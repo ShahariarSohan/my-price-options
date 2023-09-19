@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
 import { LineChart as LC, Line, CartesianGrid, XAxis, YAxis } from "recharts";
-const LineChart = (props) => {
+const LineChart = () => {
   const examData = [
     { exam: 1, math: 85, chemistry: 78, physics: 92, english: 88 },
     { exam: 2, math: 88, chemistry: 75, physics: 89, english: 90 },
@@ -15,12 +14,10 @@ const LineChart = (props) => {
       <Line type="monotone" dataKey="chemistry" stroke="#000000" />
       <Line type="monotone" dataKey="physics" stroke="#0000FF" />
       <CartesianGrid stroke="#ccc" />
-      <XAxis dataKey="math,chemistry,physics" />
-      <YAxis datatype="exam" />
+      <XAxis dataKey="exam" />
+      <YAxis />
     </LC>
   );
 };
-
-LineChart.propTypes = {};
 
 export default LineChart;
