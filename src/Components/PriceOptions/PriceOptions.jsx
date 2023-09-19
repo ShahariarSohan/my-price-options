@@ -1,6 +1,6 @@
 import PriceOption from "../PriceOption/PriceOption";
-
-const PriceOptions = () => {
+import PropTypes from "prop-types";
+const PriceOptions = ({ handleMessage }) => {
   const gyms = [
     {
       id: 1,
@@ -81,11 +81,17 @@ const PriceOptions = () => {
       <h1 className="text-3xl text-center">GYM</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {gyms.map((gym) => (
-          <PriceOption key={gym.id} gym={gym}></PriceOption>
+          <PriceOption
+            key={gym.id}
+            gym={gym}
+            handleMessage={handleMessage}
+          ></PriceOption>
         ))}
       </div>
     </div>
   );
 };
-
+PriceOptions.propTypes = {
+  handleMessage: PropTypes.func.isRequired,
+};
 export default PriceOptions;

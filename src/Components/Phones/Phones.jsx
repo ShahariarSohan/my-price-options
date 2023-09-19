@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { ComposedChart, Bar, XAxis, YAxis } from "recharts";
+import { ComposedChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 
 const Phones = () => {
   const [phones, setPhones] = useState([]);
@@ -19,14 +19,14 @@ const Phones = () => {
         setPhones(phoneWithFakeData);
       });
   }, []);
-  console.log(phones);
   return (
     <div>
       <h1 className="text-3xl font-semibold">Phones :{phones.length}</h1>
-      <ComposedChart width={730} height={250} data={phones}>
+      <ComposedChart width={1400} height={250} data={phones}>
         <Bar dataKey="price" barSize={20} fill="#413ea0" />
         <XAxis dataKey="name"></XAxis>
         <YAxis></YAxis>
+        <Tooltip></Tooltip>
       </ComposedChart>
     </div>
   );

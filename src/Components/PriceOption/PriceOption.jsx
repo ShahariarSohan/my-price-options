@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import Features from "../Features/Features";
-
-const PriceOption = ({ gym }) => {
+const PriceOption = ({ gym, handleMessage }) => {
   const { name, features, price } = gym;
   return (
     <div className="bg-blue-300 font-semibold w-full p-5 shadow-xl rounded-md flex flex-col">
@@ -13,15 +12,18 @@ const PriceOption = ({ gym }) => {
           <Features key={idx} feature={feature}></Features>
         ))}
       </div>
-      <button className="text-white text-center rounded-md bg-red-600 hover:bg-red-800 px-10 py-2 mt-2">
+      <button
+        onClick={handleMessage}
+        className="text-white text-center rounded-md bg-red-600 hover:bg-red-800 px-10 py-2 mt-2"
+      >
         Select
       </button>
     </div>
   );
 };
-
 PriceOption.propTypes = {
   gym: PropTypes.object.isRequired,
+  handleMessage: PropTypes.func.isRequired,
 };
 
 export default PriceOption;
