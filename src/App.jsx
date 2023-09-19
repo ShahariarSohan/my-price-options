@@ -3,6 +3,7 @@ import AreaChart from "./Components/AreaChart/AreaChart";
 import BarChart from "./Components/BarChart/BarChart";
 import LineChart from "./Components/Charts/LineChart";
 import NavBar from "./Components/NavBar/NavBar";
+import Phones from "./Components/Phones/Phones";
 import PieChart from "./Components/PieChart/PieChart";
 import PriceOptions from "./Components/PriceOptions/PriceOptions";
 
@@ -17,6 +18,7 @@ function App() {
           <AreaChart></AreaChart>
           <BarChart></BarChart>
           <PieChart></PieChart>
+          <Phones></Phones>
         </div>
       </div>
     </>

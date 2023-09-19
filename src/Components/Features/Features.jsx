@@ -9,7 +9,7 @@ const Features = ({ feature }) => {
 };
 
 Features.propTypes = {
-  feature: PropTypes.array.isRequired,
+  feature: PropTypes.string.isRequired,
 };
 
 export default Features;

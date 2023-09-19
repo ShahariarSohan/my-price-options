@@ -13,9 +13,9 @@ const PriceOption = ({ gym }) => {
           <Features key={idx} feature={feature}></Features>
         ))}
       </div>
-      <btn className="text-white text-center rounded-md bg-red-600 hover:bg-red-800 px-10 py-2 mt-2">
+      <button className="text-white text-center rounded-md bg-red-600 hover:bg-red-800 px-10 py-2 mt-2">
         Select
-      </btn>
+      </button>
     </div>
   );
 };
