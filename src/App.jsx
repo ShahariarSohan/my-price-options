@@ -1,5 +1,6 @@
 import "./App.css";
 import AreaChart from "./Components/AreaChart/AreaChart";
+import BarChart from "./Components/BarChart/BarChart";
 import LineChart from "./Components/Charts/LineChart";
 import NavBar from "./Components/NavBar/NavBar";
 import PriceOptions from "./Components/PriceOptions/PriceOptions";
@@ -13,6 +14,7 @@ function App() {
           <PriceOptions></PriceOptions>
           <LineChart></LineChart>
           <AreaChart></AreaChart>
+          <BarChart></BarChart>
         </div>
       </div>
     </>
