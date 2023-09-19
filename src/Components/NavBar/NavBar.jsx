@@ -13,7 +13,10 @@ const NavBar = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="bg-yellow-400 p-5 text-black md:flex">
-      <div onClick={() => setMenuOpen(!menuOpen)} className="text-3xl ">
+      <div
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="text-3xl md:hidden"
+      >
         {menuOpen ? (
           <RiCloseCircleFill></RiCloseCircleFill>
         ) : (
